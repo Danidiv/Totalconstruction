@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    }
+    h2 { text-align: center; }
+    label { font-weight: bold; display: block; margin-top: 10px; }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+<form action="send-mail.php" method="POST" class="contact-form">
+  <div class="row">
+    <!-- Name -->
+    <div class="form-group col-md-6 mb-4">
+      <input type="text" name="name" class="form-control" placeholder="Enter Your Name" required>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group col-md-6 mb-4">
+      <input type="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group col-md-6 mb-4">
+      <input type="text" name="phone" class="form-control" placeholder="Phone Number">
+    </div>
+
+    <!-- Subject -->
+    <div class="form-group col-md-6 mb-4">
+      <input type="text" name="subject" class="form-control" placeholder="Subject">
+    </div>
+
+    <!-- Message -->
+    <div class="form-group col-md-12 mb-4">
+      <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="col-md-12 form-btn">
+      <button type="submit" class="btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
